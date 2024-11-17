@@ -1,0 +1,17 @@
+ejecutar en una terminal de window:
+djangoproy.bat nombre_proyecto nombre_aplicacion
+
+copiar el archivo generate_crud.py al directorio del proyecto.
+ubicarnos en el directorio del proyecto y usar python:
+
+editar las lineas de generate_crud.py con el nombre de nuestro proyecto y nuestra aplicacion.
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myproject11.settings")
+# Configurations
+PROJECT_NAME = "myproject11"
+APP_NAME = "myapp11"
+
+Ejecutar dos veces seguidas para que registre la aplicacion. (pequeño detalle)
+python generate_crud.py
+
+python manage.py startapp myapp12
